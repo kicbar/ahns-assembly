@@ -13,13 +13,3 @@ main:
     mov     rax, 60	; 60 = wyjście	
     mov     rdi, 0	; 0 = wyjściowy kod sygnalizujący sukces	
     syscall		; zakończ
-    
-    
-section .text
-global _start
-
-_start:
-    ; Mnożenie 10 * 5
-    mov rax, 10       ; Załaduj pierwszy argument (10) do rax
-    mov rbx, 5        ; Załaduj drugi argument (5) do rbx
-    mul rbx           ; Pomnóż zawartość rax przez zawartość rbx
