@@ -4,9 +4,9 @@ section .data
     buffer db 16 ; Bufor na wprowadzoną wartość
 
 section .text
-    global _start
+    global main
 
-_start:
+main:
     ; Wyświetlenie komunikatu
     mov rax, 1
     mov rdi, 1
